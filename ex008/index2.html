@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        
+       body {
+        
+        background-color: wheat;
+        font: normal 150% arial ;
+    }
+   
+        </style>
+</head>
+<body>
+    <main>
+        <h1>Nacionalidade Brasileira?</h1>
+        Qual o país que você nasceu? <input type="text" name="text" id="cid">
+        <input type="button" value="Buscar" onclick="calcular()">
+        
+        <div id="resposta">
+        
+        </div>
+        
+        <script>
+        
+        function calcular() {
+            var pais = window.document.querySelector('input#cid')
+            var local = (pais.value)
+            resposta.innerHTML = `<p>Seu País Atual é <strong>${local}</strong>.</p>`
+                if (local == 'brasil') {resposta.innerHTML += `<p>Você é <strong>Brasileiro!!</strong> Parabéns.</p> `}
+                 else resposta.innerHTML += `<p>Você não tem <strong>Nacionalidade</strong> brasileira.</p>`
+        
+        
+                }
+            </script>
+        
+    </main>
+</body>
+
+</html>
