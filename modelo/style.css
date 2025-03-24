@@ -3,7 +3,6 @@
 body {
     background-color: rgb(91, 91, 248);
     font: normal 15pt Arial;
-    
 
 
 }
@@ -27,16 +26,7 @@ section {
 footer {
     color: white;
     text-align: center;
-    font-style: italic;
-    
+    font-style: italic
 
-}
-img {
-    border: 3px solid black;
-    border-radius: 50%;
-    
-}
-div {
-    text-align: center;
-    padding: 8px;
+
 }
