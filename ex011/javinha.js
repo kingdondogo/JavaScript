@@ -1,11 +1,16 @@
 function verificar() {
     var data = new Date()
     var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
+    var ano1 = data.getFullYear()
+    var fano = document.getElementById('txtano') //2001
     var res = document.querySelector('div#res')
+    var ano1 =  ano1 - 122
+    
     if (fano.value.length == 0 || Number (fano.value) > ano) {
-        window.alert('[ERRO] Verefique os dados e tente novamente!')
-    } else {
+        window.alert('[ERRO] Data invalida!')
+    } else { if (ano1 > fano.value) {window.alert('[ERRO] Data invalida!')}
+        else 
+        
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
