@@ -14,12 +14,14 @@ if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0
 var i = Number(inicio.value)
 var f = Number(fim.value)
 var p = Number(passo.value)
-
+if (p <= 0) {p = 1}
+     
+if (i < f) {
 for (var ini = i ; ini <= f ; ini += p){
     
     res.innerHTML += `${ini} `;
 }
-
+}
 for (var ife = i ; ife >= f ; ife -= p){
     
     res.innerHTML += `${ife} `;
